@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign In</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Link to Font Awesome CSS -->
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@
     }
 
     .container {
-      background-color: rgba(206, 193, 193, 0.5); /* Semi-transparent white background */
+      background-color: rgba(206, 193, 193, 0.5); 
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -27,30 +27,30 @@
 
     h1, p {
       text-align: center;
-      color: rgb(127, 33, 60); /* Adjust text color to make it visible against the background */
+      color: rgb(127, 33, 60); 
     }
 
     form {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center the form horizontally */
+      align-items: center; 
     }
 
     label {
       margin-bottom: 5px;
-      color: rgb(135, 56, 56); /* Adjust label color to make it visible against the background */
+      color: rgb(135, 56, 56); 
     }
 
     input[type="text"],
     input[type="password"] {
       padding: 10px;
       margin-bottom: 10px;
-      border: none; /* Remove border */
+      border: none; 
       border-radius: 3px;
       box-sizing: border-box;
       width: 100%;
-      background-color: rgba(134, 72, 72, 0.3); /* Semi-transparent background */
-      color: rgb(119, 56, 56); /* Adjust text color to make it visible against the background */
+      background-color: rgba(134, 72, 72, 0.3); 
+      color: rgb(119, 56, 56); 
     }
 
     button[type="submit"] {
@@ -68,7 +68,7 @@
     }
 
     a {
-      color: rgb(71, 36, 36); /* Adjust link color to make it visible against the background */
+      color: rgb(71, 36, 36); 
     }
 
     @keyframes fadeIn {
@@ -81,11 +81,11 @@
     }
     
     .success-message {
-      display: none; /* Initially hide the success message */
+      display: none; 
       text-align: center;
       color: rgb(10, 55, 10);
       font-weight: bold;
-      animation: fadeIn 1s ease forwards; /* Apply the fadeIn animation */
+      animation: fadeIn 1s ease forwards; 
     }
   </style>
 </head>
@@ -101,15 +101,15 @@
       <a href="forgot_password.html">Forgot Password?</a>
     </form>
     <p>Don't have an account? <a href="register.html">Register</a></p>
-    <div class="success-message" id="loginMessage">Login Successful! <i class="fas fa-check-circle" style="color: green;"></i></div> <!-- Display login message here -->
+    <div class="success-message" id="loginMessage">Login Successful! <i class="fas fa-check-circle" style="color: green;"></i></div>
   </div>
   
   <script>
     document.getElementById("signInForm").addEventListener("submit", function(event) {
       event.preventDefault(); // Prevent form submission
-      document.getElementById("loginMessage").style.display = "block"; // Show the success message
+      document.getElementById("loginMessage").style.display = "block"; 
       setTimeout(function() {
-        window.location.href = "home1.html"; // Redirect to home1.html after 2 seconds
+        window.location.href = "home1.html"; 
       }, 5000);
     });
   </script>
