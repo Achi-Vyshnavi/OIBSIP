@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ResortPalette</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('image2.jpg'); /* Specify your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(81, 40, 40); /* Adjust text color for better visibility */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px;
+            background-color: #c17575;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-family: Verdana;
+            color: #5a252f;
+        }
+        .navbar {
+            flex: 1; /* Grow to fill available space */
+            text-align: center; /* Center the items */
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto; /* Center the list horizontally */
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #52272f;
+            padding: 6px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Verdana;
+        }
+        .navbar a:hover {
+            background-color: #d4b8b8;
+            color: rgb(144, 129, 129);
+        }
+        .main-sentence {
+            padding: 1px;
+            background: linear-gradient(to bottom, rgba(179, 162, 162, 0.8), rgba(53, 50, 50, 0.2)); /* Fading color background */
+            border-radius: 10px;
+            max-width: 40%; /* Adjust the maximum width of the box */
+        }
+        .about-content {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 10px;
+            max-width: 80%; /* Adjust the maximum width of the box */
+            margin: 20px auto; /* Center the box horizontally */
+        }
+        .services-list {
+            text-align: left; /* Align service list to the left */
+            margin-top: 20px; /* Add margin at the top */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ResortPalette</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="destinations1.html">Destinations</a></li>
+                <li><a href="about.html">Coupons</a></li>
+                <li><a href="contact.html">Events</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar"> <!-- New navbar for Sign In at the right -->
+            <ul>
+                <li><a href="signIn.html">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div class="about-content">
+        <h2>About ResortPalette</h2>
+        <p>At ResortPalette, we are dedicated to providing exceptional resort management services that exceed expectations. With years of experience in the hospitality industry, we understand the intricacies of running a successful resort and are committed to delivering unparalleled service to both our clients and their guests.</p>
+        
+        <h3>Our Services</h3>
+        <ul class="services-list">
+            <li><strong>Property Management:</strong> We offer comprehensive property management services tailored to meet the unique needs of each resort.</li>
+            <li><strong>Guest Experience Enhancement:</strong> At ResortPalette, we prioritize the guest experience above all else.</li>
+            <li><strong>Revenue Optimization:</strong> With our expertise in revenue management, we help resorts maximize their profitability through strategic pricing, distribution channels, and marketing initiatives.</li>
+            <li><strong>Event Planning and Management:</strong> From weddings and corporate retreats to special events and celebrations, our experienced event planning team handles every detail with precision and care.</li>
+            <li><strong>Environmental Stewardship:</strong> At ResortPalette, we are committed to environmental sustainability and responsible stewardship of natural resources.</li>
+            <li><strong>Technology Integration:</strong> We leverage cutting-edge technology solutions to streamline operations, enhance guest communication, and optimize efficiency.</li>
+        </ul>
+    </div>
+    <footer>
+               <p>&copy; 2024 ResortPalette</p>
+    </footer>
+</body>
+</html>
+
