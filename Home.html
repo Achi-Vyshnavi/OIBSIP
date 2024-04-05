@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookyourResort</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("pic6.jpg"); /* Specify your background image */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(238, 225, 225); /* Adjust text color for better visibility */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px;
+            background-color: #ddc6c6;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .header h1 {
+            margin: 0;
+            font-family: Verdana;
+            color: #5a252f;
+        }
+        .navbar {
+            flex: 1; /* Grow to fill available space */
+            text-align: center; /* Center the items */
+        }
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto; /* Center the list horizontally */
+        }
+        .navbar li {
+            display: inline-block;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #52272f;
+            padding: 6px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: Verdana;
+        }
+        .navbar a:hover {
+            background-color: #d4b8b8;
+            color: rgb(144, 129, 129);
+        }
+        .main-sentence {
+            padding: 1px;
+            background: linear-gradient(to bottom, rgba(179, 162, 162, 0.8), rgba(53, 50, 50, 0.2)); /* Fading color background */
+            border-radius: 10px;
+            max-width: 40%; /* Adjust the maximum width of the box */
+        }
+        .footer {
+            color: #5a252f;
+            padding: 20px;
+            text-align: center;
+            position: relative; /* Adjusted position */
+            width: 100%;
+        }
+        .book-now {
+            background-color: #c0b3b392;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 50%;
+        }
+        .book-now input[type="date"],
+        .book-now input[type="time"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .book-now button {
+            background-color: #5a252f;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .book-now button:hover {
+            background-color: #8d4760;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>ResortPalette</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="destinations1.html">Destinations</a></li>
+                <li><a href="coupons.html">Coupons</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar"> <!-- New navbar for Sign In at the right -->
+            <ul>
+                <li><a href="SignIn.html">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-sentence">
+        <h1>Each stay is a story waiting to be written,</h1>
+        <h1>and every moment is a treasure to be cherished.</h1>
+        <h2>Transform your journey with our array of distinct retreats</h2>
+    </div>
+    <footer class="footer">
+        <div class="book-now">
+            <h2>Book Now</h2>
+            <form>
+                <input type="date" id="checkin-date" name="checkin-date" required>
+                <input type="time" id="checkin-time" name="checkin-time" required>
+                <button type="submit">Check Availability</button>
+            </form>         
+        </div>
+    </footer>
+</body>
+</html>
