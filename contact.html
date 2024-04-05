@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Lucida Console, Monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            background-color: #FBCEB1; /* Set background color for the entire page */
+        }
+
+        /* Top section with white background */
+        .top-section {
+            padding-bottom: 80px; /* Adjusted padding to accommodate the bottom section */
+            text-align: center; /* Align text to center */
+            background-color: #FBCEB1; /* Set background color */
+        }
+.top-border {
+        border-top: 5px solid #8B4513; /* Brown color for the border */
+    }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+
+
+        .navbar {
+            background-color: #FBCEB1;
+            text-align: right; /* Align options to right */
+            padding: 10px;
+        }
+
+        .navbar a {
+            margin-right: 20px; /* Add margin between options */
+            text-decoration: none;
+            color: #333; /* Set text color for options */
+        }
+
+        .navbar a:hover {
+            color: #007bff; /* Change text color on hover */
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center; /* Center-align the text */
+        }
+
+        .contact-form {
+            background-color: #f0f0f0; /* Set background color for the message box */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            padding: 20px; /* Add padding inside the message box */
+            margin-top: 20px; /* Add margin to separate it from other elements */
+            display: flex;
+            flex-direction: column; /* Arrange elements vertically */
+        }
+
+        .success-message {
+            background-color: #7eff7e; /* Set background color for the success message */
+            color: #008000; /* Set text color for the success message */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            padding: 10px; /* Add padding inside the success message */
+            margin-top: 20px; /* Add margin to separate it from other elements */
+        }
+
+        .stay-connected {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .stay-connected h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: auto;
+        }
+
+        .medium-link {
+        display: inline-block; /* Ensure the Medium icon is displayed as a block */
+        margin-top: 10px; /* Adjust margin as needed */
+    }
+
+    .medium-link img {
+        width: 30px; /* Set the width of the Medium icon */
+        height: auto;
+    }
+#submit-btn {
+        background-color: #007bff; /* Change the background color of the button */
+        color: #fff; /* Change the text color of the button */
+        border: none; /* Remove the button border */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        cursor: pointer; /* Add cursor pointer on hover */
+        transition: background-color 0.3s ease; /* Add transition effect for smoother hover */
+    }
+
+    #submit-btn:hover {
+        background-color: #0056b3; /* Change the background color on hover */
+    }
+.contact-form {
+        background-color: #EFD8BD; /* Set background color for the message box */
+        border-radius: 10px; /* Add border radius for rounded corners */
+        padding: 20px; /* Add padding inside the message box */
+        margin-top: 20px; /* Add margin to separate it from other elements */
+        display: flex;
+        flex-direction: column; /* Arrange elements vertically */
+        align-items: center; /* Center elements horizontally */
+    }
+
+    .contact-form label {
+        margin-bottom: 10px; /* Add margin between label and input */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%; /* Make inputs and textarea full width */
+        padding: 10px; /* Add padding */
+        margin-bottom: 10px; /* Add margin between inputs */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        border: 1px solid #ccc; /* Add border */
+        box-sizing: border-box; /* Include padding and border in element's total width/height */
+    }
+
+    #submit-btn {
+        background-color: #007bff; /* Change the background color of the button */
+        color: #fff; /* Change the text color of the button */
+        border: none; /* Remove the button border */
+        padding: 10px 20px; /* Adjust padding as needed */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        cursor: pointer; /* Add cursor pointer on hover */
+        transition: background-color 0.3s ease; /* Add transition effect for smoother hover */
+    }
+
+    #submit-btn:hover {
+        background-color: #0056b3; /* Change the background color on hover */
+    }    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="myportfolio1.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+    </div>
+
+    <!-- Top Section -->
+    <div class="top-section">
+        <div class="container">
+            <h1>Contact</h1>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" id="submit-btn">Send Message</button>
+            </form>
+            <div id="success-message" style="display: none;">Message sent successfully!</div>
+        </div>
+    </section>
+
+    <!-- Let's Stay Connected Section -->
+    <section class="stay-connected">
+        <h3>Let's Stay Connected</h3>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/your-profile"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.twitter.com/your-profile"><img src="github.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/your-profile"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+           </section>
+
+    <footer>
+        <p>&copy; 2024 My Blog</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.getElementById("contact-form");
+            var successMessage = document.getElementById("success-message");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+
+                // Display fake success message
+                successMessage.style.display = "block";
+
+                // Reset form fields
+                form.reset();
+
+                // Hide success message after 3 seconds
+                setTimeout(function() {
+                    successMessage.style.display = "none";
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
+

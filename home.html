@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Lucida Console, Monospace;
+            overflow-x: hidden;
+            perspective: 1000px; /* Required for 3D transforms */
+        }
+
+        /* Style for the border line */
+        .border-line {
+            position: absolute;
+            top: 55px; /* Adjusted top position */
+            left: 0;
+            width: 100%;
+            height: 1px; /* Adjusted height for a thin line */
+            background-color: #964B00; /* Brown color */
+        }
+
+        /* Style for the navigation options */
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px; /* Adjust padding as needed */
+            z-index: 1000; /* Ensure the navbar stays on top of other content */
+        }
+
+        .navbar a {
+            color: #333; /* Dark text color */
+            text-decoration: none; /* Remove underline */
+            margin-left: 20px; /* Add space between links */
+        }
+
+        /* Change color of links on hover */
+        .navbar a:hover {
+            color: #964B00; /* Brown color */
+        }
+
+        /* Style for the main content */
+    .main {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        min-height: 100vh; /* Adjusted min-height to make sure the content is centered vertically */
+        background-color: #FBCEB1; /* Adjusted background color */
+        overflow: hidden;
+        position: relative;
+        margin-top: 50px; /* Add margin-top to account for the fixed navbar */
+    }
+
+    .main img {
+        width: 200px; /* Increase image width */
+        height: 200px; /* Increase image height */
+        border-radius: 50%; /* Make image appear in circle shape */
+        transition: transform 1s;
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+
+    .main .content {
+        text-align: center; /* Center-align text */
+        font-size: 18px; /* Increase font size */
+        opacity: 0; /* Initially hide the content */
+        animation: slideIn 1s forwards; /* Apply animation */
+        max-width: 600px; /* Set maximum width for the description */
+        margin: 0 auto;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(50px); /* Start from 50px below */
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0); /* Slide into view */
+        }
+    }
+
+        .main.hidden img {
+            transform: rotateY(90deg) translateX(200px); /* Rotate photo 90 degrees */
+        }
+
+        .main.hidden .content {
+            opacity: 0; /* Hide content */
+        }
+
+        /* Style for the left corner */
+        .left-corner {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000; /* Ensure the corner stays on top of other content */
+            color: #333; /* Text color */
+            font-size: 18px;
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically */
+        }
+
+        .left-corner div {
+            margin-right: 10px; /* Add space between the name and the title */
+        }
+
+        .left-corner div.name {
+            font-weight: bold; /* Make the name bold */
+        }
+
+        /* Add more styling as needed */
+
+        /* Style for the footer */
+        footer {
+            background-color: #efdbc6;/* Dark background color */
+            color: #fff; /* Light text color */
+            padding: 4px; /* Padding around content */
+            text-align: left; /* Center align text */
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Stick to the bottom */
+            width: 100%;
+            height:auto;
+            /* Full width */
+        }
+
+        .social-links a {
+            color: #fff; /* White color for social links */
+            text-decoration: none; /* Remove underline */
+            margin: 0 10px; /* Add margin between links */
+        }
+
+        /* Change color of social links on hover */
+        .social-links a:hover {
+            color: #FBCEB1; /* Light brown color */
+        }
+.instagram {
+    width: 32px; /* Set the width to 32px */
+    height: auto; /* Let the height adjust proportionally */
+}
+.medium {
+    width: 32px; /* Set the width to 32px */
+    height: auto; /* Let the height adjust proportionally */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Left corner -->
+    <div class="left-corner">
+        <div class="name">Achi Vyshnavi</div>
+        <div>Computer Science Engineer</div>
+    </div>
+
+    <!-- Navigation options -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="myportfolio1.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <div class="border-line"></div> <!-- Border line -->
+
+        <div class="content">
+            <img id="profileImg" src="mypic1.jpg" alt="Your Photo">
+            <div id="introText">
+                <h1>Achi Vyshnavi</h1>
+                <p>Greetings! I'm Achi Vyshnavi , a computer science student with a passion for Innovation and Web developement technology. With 3 years of experience under my belt, I've had the privilege of working on diverse projects and collaborating with talented individuals across the globe.My journey in Computer Science Background began with a relentless curiosity and a thirst for knowledge. Over the years, I've honed my skills in Web development,cloud technology. From My Experience and projects, I've gained invaluable insights and developed a keen eye for detail,I'm a firm believer in the power of collaboration and the impact of innovative thinking.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+   <div class="social-links">
+            <a href="https://www.linkedin.com/in/vyshnavi-achi-2b9165260/" target="_blank"><img src="linkedin2.png"></a>
+            <a href=https://medium.com/@vyshnaviaachi target="_blank"><img src="medium.png" class="medium"></a>
+            <a href="https://instagram.com/vyshnuhveee._" target="_blank"><img src="instagram.png" class="instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>&copy; Achi Vyshnavi Portfolio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Button to trigger page turn effect -->
+    <button id="skillsBtn">Skills</button>
+
+    <script>
+        // Function to handle page turn effect
+        function turnPage() {
+            var main = document.querySelector('.main');
+
+            // Toggle hidden class to trigger page turn effect
+            main.classList.toggle('hidden');
+        }
+
+        // Event listener for button click
+        document.getElementById('skillsBtn').addEventListener('click', function() {
+            turnPage();
+        });
+    </script>
+</body>
+</html>

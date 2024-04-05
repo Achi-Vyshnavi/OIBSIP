@@ -1,0 +1,318 @@
+<!DOCTYP<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio - Skills</title>
+    <style>
+        body {
+            font-family: Lucida Console, Monospace;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            background-color: #FBCEB1; /* Set background color for the entire page */
+        }
+
+        /* Top section with white background */
+        .top-section {
+            padding-bottom: 80px; /* Adjusted padding to accommodate the bottom section */
+            text-align: center; /* Align text to center */
+            background-color: #FBCEB1; /* Set background color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        .navbar {
+            background-color: #FBCEB1;
+            text-align: right; /* Align options to right */
+            padding: 10px;
+        }
+
+        .navbar a {
+            margin-right: 20px; /* Add margin between options */
+            text-decoration: none;
+            color: #333; /* Set text color for options */
+        }
+
+        .navbar a:hover {
+            color: #007bff; /* Change text color on hover */
+        }
+
+        .skills-wrapper {
+            display: flex;
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            width: calc(50% - 20px);
+            margin-bottom: 20px; /* Add margin between skills */
+            padding: 10px; /* Add padding for better spacing */
+            background-color: transparent; /* Set background color to transparent */
+            border-radius: 5px; /* Add border radius */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            text-align: center; /* Center text */
+        }
+
+        .skill img {
+            max-width: 80px; /* Adjust the maximum width */
+            height: auto;
+            margin-bottom: 10px; /* Add space between image and description */
+            vertical-align: middle; /* Align image vertically */
+        }
+
+        .progress-circle {
+            width: 60px;
+            height: 60px;
+            margin: 20px auto 0; /* Add margin for spacing */
+        }
+
+        .progress-bar {
+            fill: none;
+            stroke-width: 8;
+            stroke-linecap: round;
+            stroke: #007bff; /* Progress bar color */
+        }
+
+        .progress-value {
+            font-size: 14px;
+            text-align: center;
+            display: block;
+        }
+
+        .skill p {
+            font-size: 14px; /* Adjust font size for description */
+            margin-bottom: 10px; /* Add margin below description */
+        }
+
+       .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            min-height: 100px; /* Ensure footer height */
+        }
+
+        .footer-left {
+            flex: 1;
+        }
+
+        .footer-right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center; /* Center social links */
+            align-items: center; /* Center vertically */
+        }
+
+        .social-links a {
+            margin: 0 10px; /* Adjust margin between social links */
+        }
+
+        .social-links img {
+            width: 30px;
+            height: auto;
+        }
+
+        h3 {
+            margin-bottom: 10px; /* Add margin to separate heading from social links */
+        }
+
+        .contact-logo {
+            width: 40px;
+            height: auto;
+            margin-right: 10px; /* Adjust margin */
+        } 
+@keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        } </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="myportfolio1.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <!-- Top Section -->
+    <div class="top-section">
+        <div class="container">
+            <h1>My Skillset</h1>
+            <!-- Skills Container -->
+            <div class="skills-wrapper">
+                <!-- Web Development -->
+                <!-- Your skills here -->
+            </div>
+        </div>
+    </div>
+<div class="container">
+        <div class="skills-wrapper">
+            <!-- Existing Skills -->
+            <div class="skill">
+                <img src="web.jpg" alt="Web Development">
+                <p><strong>Web Development</strong></p>
+                <p>Proficient in HTML, CSS, JavaScript, and various frameworks such as React.js and Vue.js. Familiar with server-side languages like Node.js and PHP.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">80%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Add more skills here -->
+            <!-- Cloud Computing -->
+            <div class="skill">
+                <img src="cloudcomputing.jpg" alt="Cloud Computing">
+                <p><strong>Cloud Computing</strong></p>
+                <p>Proficient in cloud security best practices, including identity and access management, encryption, and compliance.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">80%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Java -->
+            <div class="skill">
+                <img src="java.jpg" alt="Java">
+                <p><strong>Java</strong></p>
+                <p>Skilled in Java programming language and associated frameworks such as Spring and Hibernate for building enterprise-level solutions.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">80%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Power BI -->
+            <div class="skill">
+                <img src="powerbi.jpg" alt="Power BI">
+                <p><strong>Power BI</strong></p>
+                <p>Skilled in designing intuitive user interfaces and interactive features to facilitate data exploration and decision-making.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">80%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Adaptability -->
+            <div class="skill">
+                <img src="adaptability.jpg" alt="Adaptability">
+                <p><strong>Adaptability</strong></p>
+                <p>Adaptability is my capacity to adjust to new circumstances and thrive in diverse environments. I possess the ability to quickly assess and respond to changing situations, allowing me to remain effective and resilient in dynamic settings.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">70%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Active Listening -->
+            <div class="skill">
+                <img src="activelistening.jpg" alt="Active Listening">
+                <p><strong>Active Listening</strong></p>
+                <p>As an active listener, I demonstrate attentiveness, empathy, and focus during conversations, allowing me to comprehend both the verbal and non-verbal cues conveyed by the speaker.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">70%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Strategic Thinking -->
+            <div class="skill">
+                <img src="strategicthinking.jpg" alt="Strategic Thinking">
+                <p><strong>Strategic Thinking</strong></p>
+                <p>As a strategic thinker, I possess a forward-thinking mindset and the capacity to envision the bigger picture, considering both internal and external factors that impact decision-making.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">70%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Leadership -->
+            <div class="skill">
+                <img src="leadership.jpg" alt="Leadership">
+                <p><strong>Leadership</strong></p>
+                <p>As a leader, I exemplify integrity, empathy, and vision, serving as a role model for team members and fostering a culture of collaboration and excellence.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">70%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Risk Assessment -->
+            <div class="skill">
+                <img src="riskassessment.jpg" alt="Risk Assessment">
+                <p><strong>Risk Assessment</strong></p>
+                <p>As a practitioner of risk assessment, I possess the ability to systematically identify potential hazards, assess their likelihood and potential impact, and develop strategies to mitigate or manage them effectively.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">70%</text>
+                    </svg>
+                </div>
+            </div>
+            <!-- Team management -->
+            <div class="skill">
+                <img src="teammanagement.jpg" alt="Team management">
+                <p><strong>Team management</strong></p>
+                <p>As a proficient team manager, I possess the ability to effectively lead and motivate team members, fostering a collaborative and high-performing work environment.</p>
+                <div class="progress-circle">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bar" cx="50" cy="50" r="40"></circle>
+                        <text x="50%" y="50%" text-anchor="middle" dy="0.3em" class="progress-value">70%</text>
+                    </svg>
+                </div>
+            </div>
+                        </svg>
+                </div>
+            </div>
+        </div>
+    <div class="footer">
+        <div class="footer-left">
+            <p><img class="gmail-logo" src="gmail2.png" alt="Gmail">vyshnaviaachi@gmail.com</p>
+<p><img class="contact-logo" src="contact1.png" alt="Contact">+91 8978989860</p>
+<p><img class="map" src="placeholder2.png" alt="Map">Hyderabad,India</p>
+
+        </div>
+        <div class="footer-right">
+            <h3>Let's stay connected</h3>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vyshnavi-achi-2b9165260/"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/vyshnuhveee._/"><img src="instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="placeholder2.png" alt="Location"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+   
