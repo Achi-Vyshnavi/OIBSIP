@@ -10,140 +10,138 @@
             padding: 0;
             font-family: Lucida Console, Monospace;
             overflow-x: hidden;
-            perspective: 1000px; /* Required for 3D transforms */
+            perspective: 1000px;
         }
 
-        /* Style for the border line */
+        
         .border-line {
             position: absolute;
-            top: 55px; /* Adjusted top position */
+            top: 55px;
             left: 0;
             width: 100%;
-            height: 1px; /* Adjusted height for a thin line */
-            background-color: #964B00; /* Brown color */
+            height: 1px; 
+            background-color: #964B00; 
         }
 
-        /* Style for the navigation options */
+        
         .navbar {
             position: absolute;
             top: 0;
             right: 0;
-            padding: 20px; /* Adjust padding as needed */
-            z-index: 1000; /* Ensure the navbar stays on top of other content */
+            padding: 20px; 
+            z-index: 1000; 
         }
 
         .navbar a {
-            color: #333; /* Dark text color */
-            text-decoration: none; /* Remove underline */
-            margin-left: 20px; /* Add space between links */
+            color: #333; 
+            text-decoration: none; 
+            margin-left: 20px; 
         }
 
-        /* Change color of links on hover */
+       
         .navbar a:hover {
-            color: #964B00; /* Brown color */
+            color: #964B00; 
         }
 
-        /* Style for the main content */
+       
     .main {
         display: flex;
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        min-height: 100vh; /* Adjusted min-height to make sure the content is centered vertically */
-        background-color: #FBCEB1; /* Adjusted background color */
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 100vh;
+        background-color: #FBCEB1;
         overflow: hidden;
         position: relative;
-        margin-top: 50px; /* Add margin-top to account for the fixed navbar */
+        margin-top: 50px;
     }
 
     .main img {
-        width: 200px; /* Increase image width */
-        height: 200px; /* Increase image height */
-        border-radius: 50%; /* Make image appear in circle shape */
+        width: 200px;
+        height: 200px; 
+        border-radius: 50%; 
         transition: transform 1s;
-        margin-bottom: 20px; /* Add space between image and text */
+        margin-bottom: 20px;
     }
 
     .main .content {
-        text-align: center; /* Center-align text */
-        font-size: 18px; /* Increase font size */
-        opacity: 0; /* Initially hide the content */
-        animation: slideIn 1s forwards; /* Apply animation */
-        max-width: 600px; /* Set maximum width for the description */
+        text-align: center; 
+        font-size: 18px; 
+        opacity: 0; 
+        animation: slideIn 1s forwards; 
+        max-width: 600px; 
         margin: 0 auto;
     }
 
     @keyframes slideIn {
         from {
             opacity: 0;
-            transform: translateY(50px); /* Start from 50px below */
+            transform: translateY(50px); 
         }
         to {
             opacity: 1;
-            transform: translateY(0); /* Slide into view */
+            transform: translateY(0);
         }
     }
 
         .main.hidden img {
-            transform: rotateY(90deg) translateX(200px); /* Rotate photo 90 degrees */
+            transform: rotateY(90deg) translateX(200px); 
         }
 
         .main.hidden .content {
-            opacity: 0; /* Hide content */
+            opacity: 0; 
         }
 
-        /* Style for the left corner */
+       
         .left-corner {
             position: fixed;
             top: 20px;
             left: 20px;
-            z-index: 1000; /* Ensure the corner stays on top of other content */
-            color: #333; /* Text color */
+            z-index: 1000;
+            color: #333; 
             font-size: 18px;
-            display: flex; /* Use flexbox */
-            align-items: center; /* Align items vertically */
+            display: flex; 
+            align-items: center;
         }
 
         .left-corner div {
-            margin-right: 10px; /* Add space between the name and the title */
+            margin-right: 10px; 
         }
 
         .left-corner div.name {
-            font-weight: bold; /* Make the name bold */
+            font-weight: bold; 
         }
 
-        /* Add more styling as needed */
-
-        /* Style for the footer */
+        
         footer {
-            background-color: #efdbc6;/* Dark background color */
-            color: #fff; /* Light text color */
-            padding: 4px; /* Padding around content */
-            text-align: left; /* Center align text */
-            position: fixed; /* Fixed position */
-            bottom: 0; /* Stick to the bottom */
+            background-color: #efdbc6;
+            color: #fff; 
+            padding: 4px; 
+            text-align: left; 
+            position: fixed;
+            bottom: 0;
             width: 100%;
             height:auto;
-            /* Full width */
+           
         }
 
         .social-links a {
-            color: #fff; /* White color for social links */
-            text-decoration: none; /* Remove underline */
-            margin: 0 10px; /* Add margin between links */
+            color: #fff; 
+            text-decoration: none; 
+            margin: 0 10px; 
         }
 
-        /* Change color of social links on hover */
+        
         .social-links a:hover {
-            color: #FBCEB1; /* Light brown color */
+            color: #FBCEB1;
         }
 .instagram {
-    width: 32px; /* Set the width to 32px */
-    height: auto; /* Let the height adjust proportionally */
+    width: 32px; 
+    height: auto;
 }
 .medium {
-    width: 32px; /* Set the width to 32px */
-    height: auto; /* Let the height adjust proportionally */
+    width: 32px;
+    height: auto; 
 }
 
     </style>
@@ -155,7 +153,7 @@
         <div>Computer Science Engineer</div>
     </div>
 
-    <!-- Navigation options -->
+   
     <div class="navbar">
         <a href="home.html">Home</a>
         <a href="myportfolio1.html">Skills</a>
@@ -164,7 +162,7 @@
         <a href="contact.html">Contact</a>
     </div>
 
-    <!-- Main content -->
+   
     <div class="main">
         <div class="border-line"></div> <!-- Border line -->
 
@@ -177,7 +175,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    
     <footer>
    <div class="social-links">
             <a href="https://www.linkedin.com/in/vyshnavi-achi-2b9165260/" target="_blank"><img src="linkedin2.png"></a>
@@ -189,7 +187,7 @@
         </div>
     </footer>
 
-    <!-- Button to trigger page turn effect -->
+    
     <button id="skillsBtn">Skills</button>
 
     <script>
