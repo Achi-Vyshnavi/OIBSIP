@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resort Listings</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .resort-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease; 
+      position: relative; 
+    }
+
+    .resort-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .resort-card h2 {
+      margin-top: 0;
+    }
+
+    .resort-card p {
+      margin-bottom: 10px;
+    }
+
+    .resort-card a {
+      display: block;
+      text-align: center;
+      background-color: #b84066;
+      color: #fff;
+      padding: 10px; 
+      border-radius: 5px; 
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 10px; 
+    }
+
+    .resort-card a:hover {
+      background-color: #b53173;
+    }
+
+    
+    .resort-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .options {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    
+    .options a {
+      font-size: 16px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Goa</h1>
+  </header>
+  <main>
+    <section class="resort-listings">
+      <div class="resort-card">
+        <img src="bagabeachresort.jpg" alt="Resort 1">
+        <h2>The Baga Beach Resort</h2>
+        <p>Location: Baga, Goa</p>
+        <span class="rating">
+          &#9733; &#9733; &#9733; &#9733; &#9734;
+        </span>
+        <span class="rating-value">4.5</span>
+        <p>Facilities: Swimming Pool, Spa, Restaurant</p>
+        <a href="bagabeachviewdetail.html">View Details</a>
+        <div class="options">
+          <a href="destinations.html">Destinations</a>
+          <a href="coupons.html">Coupons</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+      <!-- Add more resort cards here -->
+      <div class="resort-card">
+        <img src="palolembeachresort.jpg" alt="Resort 2">
+        <h2>Palolem Beach Resort</h2>
+        <p>Location: Canacona, Goa</p>
+        <span class="rating">
+            &#9733; &#9733; &#9733; &#9733; <span class="partial-star">&#9733;</span> 
+        </span>
+        <span class="rating-value">5</span>
+        <a href="palolembeachviewdetail.html">View Details</a>
+        <!-- Add the options here -->
+        <div class="options">
+          <a href="destinations.html">Destinations</a>
+          <a href="coupons.html">Coupons</a>
+          <a href="events.html">Events</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+</body>
+</html>
+
+
